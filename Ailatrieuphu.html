@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/music.js"></script>
+</head>
+<div>
+    <h2 id="styleTime">
+        Thời gian còn lại: <span id="timeCountDown"></span>
+    </h2>
+</div>
+<div id='point'>
+    <h2 id="result"></h2>
+</div>
+<body>
+<div id="wrapper">
+    <div id="questionScreen" class="hide">
+        <div id="question" >Câu hỏi</div>
+        <div id="answer">
+            <div id="answer_1" onclick="checkAnswer(this.id, this)">Câu trả lời 1</div>
+            <div id="answer_2" onclick="checkAnswer(this.id, this)">Câu trả lời 2</div>
+            <div id="answer_3" onclick="checkAnswer(this.id, this)">Câu trả lời 3</div>
+            <div id="answer_4" onclick="checkAnswer(this.id, this)">Câu trả lời 4</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/Questions.js"></script>
+<script>
+    document.getElementById('question').innerHTML = questions[0].content;
+</script>
+</body>
+</html>
